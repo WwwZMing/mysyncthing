@@ -5,6 +5,11 @@ platforms = ["linux-64", "linux-aarch64"]
 version = "0.1.0"
 
 [tasks]
+hello = "echo Hello, World"
+server = "python src/server.py"
+client = "python src/client.py"
 
 [dependencies]
 flask = ">=3.1.2,<4"
+watchdog = ">=6.0.0,<7"
+requests = ">=2.32.5,<3"
